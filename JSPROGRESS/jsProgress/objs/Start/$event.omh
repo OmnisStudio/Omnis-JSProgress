@@ -1,0 +1,5 @@
+On evClick
+	Do $cinst.$clientcommand("lockui",row(kTrue))
+	Calculate iCancelled as kFalse
+	Calculate iValue as 1
+	Do $cinst.$objs.ProgressBar.$sendcarryon.$assign(kTrue)

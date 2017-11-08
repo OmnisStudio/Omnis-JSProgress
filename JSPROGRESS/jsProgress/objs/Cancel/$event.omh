@@ -1,0 +1,4 @@
+On evClick     ;; not yet implemented
+	Calculate iCancelled as kTrue
+	Do $cinst.$objs.ProgressBar.$sendcarryon.$assign(kTrue)
+	Do $cinst.$clientcommand("lockui",row())     ;; unlock ui

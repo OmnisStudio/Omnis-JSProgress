@@ -1,0 +1,10 @@
+On evCarryOn
+	If not(iCancelled)
+		Calculate iValue as iValue+5
+		Do $cinst.$objs.ProgressBar.$::value.$assign(iValue)
+		If iValue<100
+			Do $cinst.$objs.ProgressBar.$sendcarryon.$assign(kTrue)
+		Else
+			Do $cinst.$clientcommand("lockui",row())     ;; unlock ui
+		End If
+	End If
